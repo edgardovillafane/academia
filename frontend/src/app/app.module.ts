@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +15,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MatListModule } from '@angular/material/list';
 import { AlumnosComponent } from './alumnos/alumnos.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,11 @@ import { AlumnosComponent } from './alumnos/alumnos.component';
     MatButtonModule,
     MatIconModule,
     MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
